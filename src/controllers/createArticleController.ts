@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 import generateContent from "../services/generateContent";
 
-export async function createArticle (req: Request, res: Response) {
+export async function createArticle (req: Request, res: Response): Promise<void> {
     const { topic } = req.body;
     try {
         const content = await generateContent(topic);
