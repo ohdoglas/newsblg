@@ -1,13 +1,14 @@
 import { Router } from "express";
 import { newsBlgHome } from "../controllers/newsBlgHomeController";
-import { createArticle } from "../controllers/createArticleController";
 import { getRecentNews } from "../controllers/newsController";
+import { geminiController } from "../controllers/geminiController";
+
 
 const routes = Router();
 
 routes.get('/', newsBlgHome);
 
-routes.post('/generate', createArticle)
+routes.post('/generate', geminiController)
 
 routes.get('/news/:topic', getRecentNews)
 
