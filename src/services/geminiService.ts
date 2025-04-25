@@ -1,12 +1,9 @@
 import * as dotenv from 'dotenv';
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
-
-
 dotenv.config();
 
 const geminiKey = process.env.API_KEY;
-
 
 const genAI = new GoogleGenerativeAI(String(geminiKey));
 const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash'});
