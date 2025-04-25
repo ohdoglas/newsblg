@@ -11,27 +11,28 @@
   "author": "ohdoglas",
   "license": "ISC",
   "description": "",
-"dependencies": {
-  "@prisma/client": "^6.3.1",
-  "uuid": "^11.0.5",
-  "@google-cloud/aiplatform": "^3.25.0",
-  "@google/generative-ai": "^0.16.0",
-  "axios": "^1.7.2",
-  "body-parser": "^1.20.2",
-  "dotenv": "^16.4.5",
-  "express": "^4.19.2",
-  "openai": "^4.53.2"
-},
-"devDependencies": {
-  "@types/axios": "^0.14.0",
-  "@types/express": "^4.17.21",
-  "@types/node": "^22.0.0",
-  "@types/uuid": "^10.0.0",
-  "nodemon": "^3.1.4",
-  "ts-node": "^10.9.2",
-  "typescript": "^5.5.4",
-  "prisma": "^6.3.1"
-}
-
-
+  "dependencies": {
+    "@google-cloud/aiplatform": "^3.25.0",
+    "@google/generative-ai": "^0.16.0",
+    "@prisma/client": "^6.3.1",
+    "axios": "^1.7.2",
+    "bad-words": "^4.0.0",
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "leo-profanity": "^1.7.0",
+    "openai": "^4.96.0",
+    "uuid": "^11.0.5"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/express": "^4.17.21",
+    "@types/leo-profanity": "^1.5.4",
+    "@types/node": "^22.0.0",
+    "@types/uuid": "^10.0.0",
+    "nodemon": "^3.1.4",
+    "prisma": "^6.3.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  }
 }
