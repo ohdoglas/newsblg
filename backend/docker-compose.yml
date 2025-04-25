@@ -1,0 +1,17 @@
+services:
+  newsblg_db:
+    container_name: newsblg_db
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    volumes:
+      - ./data/postgres:/var/lib/postgresql/data
+    ports:
+      - "${POSTGRES_PORT}:5432"
+    networks:
+      - newsblg_network
+
+networks:
+  newsblg_network:
+    driver: bridge
